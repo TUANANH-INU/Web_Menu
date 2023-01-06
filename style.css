@@ -285,18 +285,24 @@ body.dark .switch::before{
 .home{
     position: absolute;
     top: 0;
-    top: 0;
     left: 250px;
-    height: 100vh;
+    height: 500vh;
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
+/*    background:black;*/
 }
 .home .text{
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 90px;
+    font-weight: 900;
     color: var(--text-color);
-    padding: 12px 60px;
+    padding: 20px;
+    text-align: center;
+/*    background: black;*/
+    font-family: 'Righteous', cursive;
+    background: url(https://i.postimg.cc/sx8s2g5d/Nout-Gons.jpg);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 .sidebar.close ~ .home{
@@ -309,12 +315,20 @@ body.dark .switch::before{
     color: var(--text-color);
 }
 
+.home .group {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
-/*.home .img{
-  background: url('./images/im4.jpg')no-repeat;
-  width: 1500px;
-  height: 730px;
-  background-size: cover;
+.item {
+  width: 10vw;
+  height: 70vh;
   background-position: center;
-  position: relative;
-}*/
+  background-size: cover;
+  margin: 1vw;
+  border-radius: 3vw;
+  display: inline-block;
+  cursor: pointer;
+}
+
